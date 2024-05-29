@@ -19,7 +19,7 @@ const fetchNumbersFromServer = async (type)=> {
 const updateNumberWindow = (newNumbers)=>{
     newNumbers.forEach(num => {
         if(!numberWindow.includes(num)){
-            if(newNumbers.length >= windowSize){
+            if(numberWindow.length >= windowSize){
                 numberWindow.shift();
             }
             numberWindow.push(num);
